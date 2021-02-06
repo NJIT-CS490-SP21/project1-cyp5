@@ -1,4 +1,11 @@
 body {
     background-color: #f3e5f5;
     font-family: 'Courier New', monospace;
+    text-align: center;
+}
+span{
+  color: blue;
+}
+img {
+  border-radius: 8px;
 }

@@ -6,14 +6,18 @@
 </head>
 
 <body>
-    <h1>What's being reported about?</h1>
-    <div class='container'>
-        {% for i in range(length) %}
-        <div class='item'>
-            <p><b>{{ music[i] }}</b></p>
-        </div>
-        {% endfor %}
-    </div>
+    <h1>Spotipy</h1>
+    <h2><div class='container'>
+            <li> Song name: {{music[0]}}</li>
+            <li> Artist name: {{music[1]}}</li>
+            <img src={{music[3]}} width="400" height="200">
+            <audio controls>
+                <source src={{music[2]}} type="audio/ogg">
+            </audio>
+            <!--<p><a href={{music[3]}}>Click to play song!</a></p>-->
+            
+
+    </h2></div>
 
 </body>
 

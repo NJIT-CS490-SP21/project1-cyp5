@@ -6,8 +6,6 @@ import music
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
-print(music.get_data())
-
 
 @app.route('/')
 def hello_world():

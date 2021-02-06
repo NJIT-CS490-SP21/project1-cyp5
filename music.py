@@ -10,6 +10,8 @@ Random_artist = ["https://api.spotify.com/v1/artists/0Tgdv4JlRUoXWfGTrWgY1m/top-
                  "https://api.spotify.com/v1/artists/008PpLcKUtVXle6JSwkq3I/top-tracks?market=US",
                  "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4/top-tracks?market=US"]
                  
+#test="https://api.spotify.com/v1/artists/0Tgdv4JlRUoXWfGTrWgY1m"
+                 
 client_creds = f"{os.getenv('client_id')}:{os.getenv('client_secret')}"
 client_creds_b64 = base64.b64encode(client_creds.encode())
 
@@ -50,7 +52,5 @@ def get_data():
 '''
 response = requests.get(test, headers=headers)
 data = response.json()
-for i in (data['tracks']):
-    for e in range(len(i['album']['artists'])):
-        print(i['album']['artists'][e]['name'])
+print(data['images'][2]['url'])
 '''

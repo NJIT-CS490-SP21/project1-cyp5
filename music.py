@@ -33,9 +33,10 @@ access_token = token_response_data['access_token']
 headers = {
     "Authorization" : f"Bearer {access_token}"
 }
-
+'''
 response = requests.get(Artist1, headers=headers)
 data = response.json()
+artist_1 = data['name']
 print("1. "+data['name'])
 
 response = requests.get(Artist2, headers=headers)
@@ -46,13 +47,23 @@ response = requests.get(Artist3, headers=headers)
 data = response.json()
 print("3. "+data['name'])
 print()
-
-response = requests.get(random.choice(Random_artist), headers=headers)
-data = response.json()
-
-for i in (data['tracks']):
-    print("Song name: " + i['name'])
-    print("Song Artist: " + i['album']['artists'][0]['name'])
-    print("Song Link: " + i['external_urls']['spotify'])
-    print("Song image: " + i['album']['images'][0]['url'])
-    print()
+'''
+def get_data():
+    response = requests.get(random.choice(Random_artist), headers=headers)
+    data = response.json()
+    
+    for i in (data['tracks']):
+        song_name = i['name']
+        song_artist = i['album']['artists'][0]['name']
+        song_link = i['external_urls']['spotify']
+        song_image = i['album']['images'][0]['url']
+    '''
+    for i in (data['tracks']):
+        print("Song name: " + i['name'])
+        print("Song Artist: " + i['album']['artists'][0]['name'])
+        print("Song Link: " + i['external_urls']['spotify'])
+        print("Song image: " + i['album']['images'][0]['url'])
+        print()
+    '''
+    array = [song_name,song_artist,song_link,song_image]
+    return array

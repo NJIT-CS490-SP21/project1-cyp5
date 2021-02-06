@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href={{ url_for( 'static', filename='style.css' ) }} />
+</head>
+
+<body>
+    <h1>What's being reported about?</h1>
+    <div class='container'>
+        {% for i in range(length) %}
+        <div class='item'>
+            <p><b>{{ music[i] }}</b></p>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+
+</html>

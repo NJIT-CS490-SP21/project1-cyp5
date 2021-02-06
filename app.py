@@ -1,25 +1,24 @@
 import os
 
 from flask import Flask, render_template
-from nyt import get_article_data
+import music
 
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
+print(music.get_data())
+
+
 @app.route('/')
 def hello_world():
     """ Returns root endpoint HTML """
-
-    keyword_query = 'Music' # Change it to something you're interested in!
-    article_data = get_article_data(keyword_query)
-
+    
+    music_data = music.get_data()
     return render_template(
         "index.html",
-        topic=keyword_query,
-        headlines=article_data['headlines'],
-        snippets=article_data['snippets'],
+        music=music_data,
+        length=len(music_data)
     )
-
 
 app.run(
     host=os.getenv('IP', '0.0.0.0'),

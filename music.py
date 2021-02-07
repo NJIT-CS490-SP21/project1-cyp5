@@ -7,8 +7,8 @@ load_dotenv(find_dotenv())# This is to load your API keys from .env
 
 AUTH_URL="https://accounts.spotify.com/api/token"
 Random_artist = ["https://api.spotify.com/v1/artists/0Tgdv4JlRUoXWfGTrWgY1m/top-tracks?market=US",
-                 "https://api.spotify.com/v1/artists/4Ai0pGz6GhQavjzaRhPTvz/top-tracks?market=US",
-                 "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4/top-tracks?market=US"]
+                 "https://api.spotify.com/v1/artists/1mYsTxnqsietFxj1OgoGbG/top-tracks?market=US",
+                 "https://api.spotify.com/v1/artists/4YRxDV8wJFPHPTeXepOstw/top-tracks?market=US"]
                  
 client_creds = f"{os.getenv('client_id')}:{os.getenv('client_secret')}"
 client_creds_b64 = base64.b64encode(client_creds.encode())

@@ -21,13 +21,13 @@ This project is to build and deploy a simple “music discovery” web app that 
 
 ## Technical Problems
 What are at least 3 technical issues you encountered with your project? How did you fix them?
-* In the beginning of starting the project, I also was having authentication issue from spotify. I was not able to fetch any information the the spotify api because of that. To solve this problem
+* In the beginning of starting the project, I was having authentication issue from spotify. I was not able to fetch any information the the spotify api because of that. To solve this problem
 I carefully followed the [Crendentials Flow guide](https://developer.spotify.com/documentation/general/guides/authorization-guide/#client-credentials-flow) and found out that I was using the wrong
-api token link for `POST`. Instead of [](https://accounts.spotify.com/api/token) I was using [](https://accounts.spotify.com/authorize?) which was giving me problems.
+api token link for `POST`. Instead of `https://accounts.spotify.com/api/token` I was using `https://accounts.spotify.com/authorize?` which was giving me problems.
 * While working on the project and executing it, my `app.py` which is my flask file, was having trouble running as it was displaying an error stating: "No such file or directory". 
-To fix this problem I googled this error and found stack overflow page which recommended me to change the name of my python file which fixed that error.
+To fix this problem I googled this error and found a stack overflow page which recommended me to change the name of my python file which fixed that error.
 * Most errors while working on this project I faced were when I was reading and understing the `json()` file generated from the spotify API. Since it was my first time working with API's, I had to 
-uderstand the format and structure of the `json()` file. To gather the information from the file well, I google json formatter and used [JSON formatter and Validator](https://jsonformatter.curiousconcept.com/) tool 
+uderstand the format and structure of the `json()` file. To gather and understand the information from the file well, I googled json formatter and used [JSON formatter and Validator](https://jsonformatter.curiousconcept.com/) tool 
 which helped me read the json file clearly.
 
 

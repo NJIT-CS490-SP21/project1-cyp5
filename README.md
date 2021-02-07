@@ -3,15 +3,13 @@
 This project is to build and deploy a simple “music discovery” web app that shows song(s) from my favorite artist(s) and link(s) to the music and lyrics. The data will be dynamically generated using third-party APIs from Spotify and Genius.
 
 ## Spotify API and Python
-[The Spotify Web API](https://developer.spotify.com/documentation/web-api/)
-The Spotify Web API allows applications to fetch lots of awesome data from the Spotify catalog, as well as manage a user's playlists and saved music. Some examples of of info you get are:
+[The Spotify Web API](https://developer.spotify.com/documentation/web-api/)allows applications to fetch lots of awesome data from the Spotify catalog, as well as manage a user's playlists and saved music. Some examples of of info you get are:
 
-Track, artist, album, and playlist metadata and search
-High-level audio features for tracks
-In-depth audio analysis for tracks
-Featured playlists and new releases
-Music recommendations based on seed data
-
+    * Track, artist, album, and playlist metadata and search.
+    * High-level audio features for tracks.
+    * In-depth audio analysis for tracks.
+    * Featured playlists and new releases.
+    * Music recommendations based on seed data.
 
 ## Install Requirements
 ```bash
@@ -20,5 +18,3 @@ Music recommendations based on seed data
 ```bash
 2. pip install requests
 ```
-
-## 

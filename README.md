@@ -4,12 +4,11 @@ This project is to build and deploy a simple “music discovery” web app that 
 
 ## Spotify API and Python
 [The Spotify Web API](https://developer.spotify.com/documentation/web-api/) allows applications to fetch lots of awesome data from the Spotify catalog, as well as manage a user's playlists and saved music. Some examples of of info you get are:
-
-    1. Track, artist, album, and playlist metadata and search.
-    2. High-level audio features for tracks.
-    3. In-depth audio analysis for tracks.
-    4. Featured playlists and new releases.
-    5. Music recommendations based on seed data.
+* Track, artist, album, and playlist metadata and search.
+* High-level audio features for tracks.
+* In-depth audio analysis for tracks.
+* Featured playlists and new releases.
+* Music recommendations based on seed data.
 
 ## Install Requirements
 ```bash

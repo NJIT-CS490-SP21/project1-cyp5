@@ -14,3 +14,7 @@ This project is to build and deploy a simple “music discovery” web app that 
 1. `pip install python-dotenv`
 2. `pip install requests`
 
+## Setup
+1. Create `.env` file in your main directory
+2. Add your CLIENT ID AND CLIENT SECRET KEY from [Spotify for developers](https://developer.spotify.com/dashboard/) with the line: `client_id= 'YOUR ID'` and `client_secret='YOUR SECRET KEY'``
+

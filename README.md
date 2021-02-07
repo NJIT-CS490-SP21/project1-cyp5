@@ -5,5 +5,7 @@ This project is to build and deploy a simple “music discovery” web app that 
 ## Install Requirements
 ```bash
 1. pip install python-dotenv
+```
+```bash
 2. pip install requests
 ```

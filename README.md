@@ -32,6 +32,6 @@ which helped me read the json file clearly.
 
 ## Additional Features to be added
 Some addiditional feature that I would like to add in my project are:
-* A search bar from where a user can search a random name of the artist and displays its most played song.
-* I would also like to add a feature where the user can see the reviews of the song being suggested.
+* A search bar from where a user can search a random name of the artist which then displays the most played song of that artist.
+* I would also like to add a feature where the user can see the reviews of the song being played.
 

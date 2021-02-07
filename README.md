@@ -11,6 +11,6 @@ This project is to build and deploy a simple “music discovery” web app that 
 * Music recommendations based on seed data.
 
 ## Install Requirements
-* 1. `pip install python-dotenv`
-* 2. `pip install requests`
+1. `pip install python-dotenv`
+2. `pip install requests`
 

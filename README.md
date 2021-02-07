@@ -19,6 +19,11 @@ This project is to build and deploy a simple “music discovery” web app that 
 1. Create `.env` file in your main directory
 2. Add your CLIENT ID and CLIENT SECRET KEY from [Spotify for developers](https://developer.spotify.com/dashboard/) with the lines: `client_id= 'YOUR_ID'` followed by `client_secret='YOUR_SECRET_KEY'`
 
+## Run Application
+1. Run command in terminal `python app.py`
+2. See output using the preview tab on cloud9. 
+3. Refresh/Reload the page to see random tracks and their artists.
+
 ## Technical Problems
 What are at least 3 technical issues you encountered with your project? How did you fix them?
 * In the beginning of starting the project, I was having authentication issue from spotify. I was not able to fetch any information the the spotify api because of that. To solve this problem

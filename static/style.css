@@ -5,8 +5,17 @@ body {
 }
 span{
   color: green;
-  font-size: 65px;
+  font-size: 125px;
+  font-family: "Brush Script MT";
+}
+dt{
+  font-size: 30px;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+dd{
+  font-family: 'Courier New', monospace;
 }
 img {
   border-radius: 8px;
+  border: 20px solid #000000
 }

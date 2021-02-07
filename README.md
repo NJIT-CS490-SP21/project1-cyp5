@@ -30,5 +30,8 @@ To fix this problem I googled this error and found a stack overflow page which r
 uderstand the format and structure of the `json()` file. To gather and understand the information from the file well, I googled json formatter and used [JSON formatter and Validator](https://jsonformatter.curiousconcept.com/) tool 
 which helped me read the json file clearly.
 
-
+## Additional Features to be added
+Some addiditional feature that I would like to add in my project are:
+* A search bar from where a user can search a random name of the artist and displays its most played song.
+* I would also like to add a feature where the user can see the reviews of the song being suggested.
 

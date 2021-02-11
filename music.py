@@ -43,10 +43,32 @@ def get_data():
         song_name = i['name']
         song_link = i['preview_url']
         song_image = i['album']['images'][0]['url']
+        song_lyrics = get_lyrics(song_name)
         artist_array = []
         for j in range(len(i['album']['artists'])):
             artist_array.append(i['album']['artists'][j]['name'])
         song_artist = str(artist_array)[1:-1].replace("'", "")
         array = [song_name,song_artist,song_link,song_image]
         rtn_array.append(array)
-    return random.choice(rtn_array)
+    random_artist = [random.choice(rtn_array)]
+    random_artist.append(data['tracks'][1]['artists'][0]['name'])
+    return random_artist
+    
+def get_lyrics(name):
+    url = f"https://api.genius.com/search?q={name}"
+    response = requests.get(url, headers = header)
+    try:
+        data = response.json()
+        lyrics_url = data['response']['hits'][0]['result']['url']
+        return lyrics_url
+    except:
+        try:
+            name = name.split('(')
+            name = name[0]
+            url = f"https://api.genius.com/search?q={name}"
+            response = requests.get(url, headers = header)
+            data = response.json()
+            lyrics_url = data['response']['hits'][0]['result']['url']
+            return lyrics_url
+        except:
+            pass

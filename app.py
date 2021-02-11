@@ -13,7 +13,7 @@ def hello_world():
     return render_template(
         "index.html",
         music=music_data,
-        length=len(music_data)
+        length=len(music_data[0]),
     )
     
 app.run(

@@ -4,17 +4,23 @@
 <head>
     <link rel="stylesheet" href={{ url_for( 'static', filename='style.css' ) }} />
 </head>
-<body>
+<body><div>
     <h1><span>Spoti-py<span></h1>
     <h2>
-        <dt>{{music[0]}}</dt>
-        <img src={{music[3]}} width="400" height="400" class="image1">
-        <dd><marquee direction="left" height="50" width="300" scrollamount="12">-By: {{music[1]}}</marquee></dd>
+        <artist>Playing Top Song of {{music[1]}}<br></br></artist>
+        <dt>{{music[0][0]}}</dt>
+        <img src={{music[0][3]}} width="400" height="400" class="image1">
+        <dd><marquee direction="left" height="50" width="300" scrollamount="12">-By: {{music[0][1]}}</marquee></dd>
     </h2>
     <h3>
         <audio controls>
-            <source src={{music[2]}} type="audio/ogg">
+            <source src={{music[0][2]}} type="audio/ogg">
         </audio>
-    </h3>
+        {%if music[0][4] != None%}
+            <dd><a href="{{music[0][4]}}" target="_blank">Get Lyrics</a></dd>
+        {%else%}
+            <dt style="color: red">Lyrics not found !!</dt>
+        {%endif%}
+    </h3></div>
 </body>
 </html>

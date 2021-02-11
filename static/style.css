@@ -1,5 +1,6 @@
 body {
-    background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v462-n-130-textureidea_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=9465282a2b0a375f4f5b120d7bbad882');
+    background-image: url('https://wallpapercave.com/wp/wp2406611.jpg');
+    background-size : cover;
     text-align: center;
     color: white;
 }
@@ -7,15 +8,41 @@ span{
   color: green;
   font-size: 125px;
   font-family: "Brush Script MT";
+  text-shadow: 2px 2px #FF0000;
 }
 dt{
   font-size: 30px;
   font-family: Copperplate, Papyrus, fantasy;
+  color: #c9c0bb;
 }
 dd{
   font-family: 'Courier New', monospace;
 }
-.image1 {
+color{
+    color:yellow;
+}
+
+img {
   border-radius: 8px;
-  border: 20px solid #000000
+  border: 20px groove #839192
+}
+artist{
+  font-size: 40px;
+  font-family: cursive;
+  color:#ba8c4f;
+}
+marquee{
+  color: #c9c0bb;
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
 }

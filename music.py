@@ -48,7 +48,7 @@ def get_data():
         for j in range(len(i['album']['artists'])):
             artist_array.append(i['album']['artists'][j]['name'])
         song_artist = str(artist_array)[1:-1].replace("'", "")
-        array = [song_name,song_artist,song_link,song_image]
+        array = [song_name,song_artist,song_link,song_image,song_lyrics]
         rtn_array.append(array)
     random_artist = [random.choice(rtn_array)]
     random_artist.append(data['tracks'][1]['artists'][0]['name'])

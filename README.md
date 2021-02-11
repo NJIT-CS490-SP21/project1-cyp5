@@ -18,6 +18,7 @@ This project is to build and deploy a simple “music discovery” web app that 
 ## Setup
 1. Create `.env` file in your main directory
 2. Add your CLIENT ID and CLIENT SECRET KEY from [Spotify for developers](https://developer.spotify.com/dashboard/) with the lines: `client_id= 'YOUR_ID'` followed by `client_secret='YOUR_SECRET_KEY'`
+3. Add your access token from [Genius API](http://genius.com/api-clients) with lines: `access_token= 'YOUR ACCESS TOKEN'`
 
 ## Run Application
 1. Run command in terminal `python app.py`.

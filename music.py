@@ -29,6 +29,10 @@ headers = {
     "Authorization" : f"Bearer {access_token}"
 }
 
+header = {
+    "Authorization": f"Bearer {os.getenv('access_token')}" #GENIUS API
+}
+
 def get_data():
     response = requests.get(random.choice(Random_artist), headers=headers)
     data = response.json()

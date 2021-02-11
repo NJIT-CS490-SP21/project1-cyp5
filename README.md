@@ -20,7 +20,7 @@ This project is to build and deploy a simple “music discovery” web app that 
 2. Add your CLIENT ID and CLIENT SECRET KEY from [Spotify for developers](https://developer.spotify.com/dashboard/) with the lines: `client_id= 'YOUR_ID'` followed by `client_secret='YOUR_SECRET_KEY'`
 
 ## Run Application
-1. Run command in terminal `python app.py`
+1. Run command in terminal `python app.py`.
 2. See output using the preview tab on cloud9. 
 3. Refresh/Reload the page to see random tracks and their artists.
 

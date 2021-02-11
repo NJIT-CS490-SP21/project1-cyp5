@@ -11,7 +11,7 @@ This project is to build and deploy a simple “music discovery” web app that 
 * Music recommendations based on seed data.
 
 ## Genius API and Python
-[The Genius API](https://docs.genius.com/#/getting-started-h1) allows hosts to fetch bunch of song lyrics and lets users highlight and annotate passages with interpretations, explanations, and references. Examples of information that you can fetch from this api includes:
+[The Genius API](https://docs.genius.com/#/getting-started-h1) allows hosts to fetch bunch of song lyrics and lets users highlight and annotate passages with interpretations, explanations, and references. Examples of information that you can gather from this api includes:
 * Searching Songs, Artists and Lyrics. 
 * Get Lyrics information for any Artist or Song.
 

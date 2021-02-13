@@ -35,7 +35,7 @@ marquee{
   color: #c9c0bb;
 }
 a:link, a:visited {
-  background-color: #f44336;
+  background-color: #04753A;
   color: white;
   padding: 15px 25px;
   text-align: center;
@@ -44,5 +44,5 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  background-color: red;
+  background-color: #04753A;
 }

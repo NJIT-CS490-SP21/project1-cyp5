@@ -11,7 +11,7 @@ This project is to build and deploy a simple “music discovery” web app that 
 * Music recommendations based on seed data.
 
 ### To Obtain Authorization:
-1. `[Register your Application](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app)`
+1. [Register your Application](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app)
 2. Have your application request refresh and access tokens; Spotify returns access and refresh tokens.
 * When the authorization code has been received, you will need to exchange it with an access token by making a POST request to the Spotify Accounts service, this time to its /api/token endpoint: `POST https://accounts.spotify.com/api/token`
 * Follow the Refreshable user [Authorization Code Flow](https://developer.spotify.com/documentation/general/guides/authorization-guide/#authorization-code-flow)
@@ -20,6 +20,10 @@ This project is to build and deploy a simple “music discovery” web app that 
 [The Genius API](https://docs.genius.com/#/getting-started-h1) allows hosts to fetch bunch of song lyrics and lets users highlight and annotate passages with interpretations, explanations, and references. Examples of information that you can gather from this api includes:
 * Searching Songs, Artists and Lyrics. 
 * Get Lyrics information for any Artist or Song.
+
+### Getting Started
+1. Start by registering your application by visiting [API Client Management Page](http://genius.com/api-clients) and create an API for your application.
+2. Since our app doesn’t require user-specific data, we can use the flow defined in the section “Access for Apps Without Users” in `https://docs.genius.com/#/authentication-h1`
 
 ## Install Requirements
 1. `pip install python-dotenv`

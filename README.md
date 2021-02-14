@@ -1,4 +1,4 @@
-# Project 1 Milestone 1
+# Project 1
 ## CS490: Guided Design in Software Engineering
 This project is to build and deploy a simple “music discovery” web app that shows song(s) from my favorite artist(s) and link(s) to the music and lyrics. The data will be dynamically generated using third-party APIs from Spotify and Genius.
 
@@ -9,6 +9,12 @@ This project is to build and deploy a simple “music discovery” web app that 
 * In-depth audio analysis for tracks.
 * Featured playlists and new releases.
 * Music recommendations based on seed data.
+
+### To Obtain Authorization:
+1. `[Register your Application](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app)`
+2. Have your application request refresh and access tokens; Spotify returns access and refresh tokens.
+* When the authorization code has been received, you will need to exchange it with an access token by making a POST request to the Spotify Accounts service, this time to its /api/token endpoint: `POST https://accounts.spotify.com/api/token`
+* Follow the Refreshable user [Authorization Code Flow](https://developer.spotify.com/documentation/general/guides/authorization-guide/#authorization-code-flow)
 
 ## Genius API and Python
 [The Genius API](https://docs.genius.com/#/getting-started-h1) allows hosts to fetch bunch of song lyrics and lets users highlight and annotate passages with interpretations, explanations, and references. Examples of information that you can gather from this api includes:

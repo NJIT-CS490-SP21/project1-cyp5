@@ -10,7 +10,7 @@ This project is to build and deploy a simple “music discovery” web app that 
 * Featured playlists and new releases.
 * Music recommendations based on seed data.
 
-### To Obtain Authorization:
+#### To Obtain Authorization:
 1. [Register your Application](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app)
 2. Have your application request refresh and access tokens; Spotify returns access and refresh tokens.
 * When the authorization code has been received, you will need to exchange it with an access token by making a POST request to the Spotify Accounts service, this time to its /api/token endpoint: `POST https://accounts.spotify.com/api/token`
@@ -21,7 +21,7 @@ This project is to build and deploy a simple “music discovery” web app that 
 * Searching Songs, Artists and Lyrics. 
 * Get Lyrics information for any Artist or Song.
 
-### Getting Started
+#### Getting Started
 1. Start by registering your application by visiting [API Client Management Page](http://genius.com/api-clients) and create an API for your application.
 2. Since our app doesn’t require user-specific data, we can use the flow defined in the section “Access for Apps Without Users” in `https://docs.genius.com/#/authentication-h1`
 

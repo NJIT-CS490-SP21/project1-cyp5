@@ -4,20 +4,24 @@ body {
     text-align: center;
     color: white;
 }
+
 span{
   color: green;
   font-size: 125px;
   font-family: "Brush Script MT";
   text-shadow: 2px 2px #FF0000;
 }
+
 dt{
   font-size: 30px;
   font-family: Copperplate, Papyrus, fantasy;
   color: #c9c0bb;
 }
+
 dd{
   font-family: 'Courier New', monospace;
 }
+
 color{
     color:yellow;
 }
@@ -26,14 +30,17 @@ img {
   border-radius: 8px;
   border: 20px groove #839192
 }
+
 artist{
   font-size: 40px;
   font-family: cursive;
   color:#ba8c4f;
 }
+
 marquee{
   color: #c9c0bb;
 }
+
 a:link, a:visited {
   background-color: #04753A;
   color: white;
@@ -45,4 +52,28 @@ a:link, a:visited {
 
 a:hover, a:active {
   background-color: #04753A;
+}
+
+input[type=text] {
+  width: 400px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  font-size: 16px;
+  background-color: #f1f1f1;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+button{
+  background-color:#0b7dda;
+  width: 100px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  font-size: 12px;
+  background-position: 5px 5px;
+  background-repeat: no-repeat;
+  padding: 12px 25px 12px 30px;
 }

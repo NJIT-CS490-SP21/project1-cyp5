@@ -6,6 +6,12 @@
 </head>
 <body><div>
     <h1><span>Spoti-py<span></h1>
+    <form action="{{ url_for("hello_world")}}" method="post">
+    <input type="text" id="artistname" name="aname" placeholder="Enter an Artist Name">
+    <button type="submit">Submit</button>
+    {%if error_msg%}
+        <br><e style="color: red">{{error_msg}}</e></br>
+    {%endif%}
     <h2>
         <artist>Playing Top Song of {{music[1]}}<br></br></artist>
         <dt>{{music[0][0]}}</dt>

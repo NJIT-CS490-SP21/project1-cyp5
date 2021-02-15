@@ -25,6 +25,7 @@ response=requests.post(AUTH_URL,data=token_data,headers=token_headers)
 token_response_data = response.json()
 
 access_token = token_response_data['access_token']
+
 headers = {
     "Authorization" : f"Bearer {access_token}"
 }
@@ -33,8 +34,8 @@ header = {
     "Authorization": f"Bearer {os.getenv('access_token')}" #GENIUS API
 }
 
-def get_data():
-    response = requests.get(random.choice(Random_artist), headers=headers)
+def get_data(name):
+    response = requests.get(name, headers=headers)
     data = response.json()
     
     rtn_array = []
@@ -72,3 +73,10 @@ def get_lyrics(name):
             return lyrics_url
         except:
             pass
+def search(name_search):
+    search_artist = f"https://api.spotify.com/v1/search?q={name_search}&type=track%2Cartist&market=US"
+    response = requests.get(search_artist, headers=headers)
+    data = response.json()
+    result = data['artists']['items'][0]['id'] #Gets the artist id of the artist from searched name
+    search_result = f"https://api.spotify.com/v1/artists/{result}/top-tracks?market=US"
+    return search_result

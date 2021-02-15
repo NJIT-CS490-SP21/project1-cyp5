@@ -5,7 +5,7 @@ import random
 
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
-Random_artist = ["https://api.spotify.com/v1/artists/0Tgdv4JlRUoXWfGTrWgY1m/top-tracks?market=US",
+Random_artist = ["https://api.spotify.com/v1/artists/1URnnhqYAYcrqrcwql10ft/top-tracks?market=US",
                  "https://api.spotify.com/v1/artists/1mYsTxnqsietFxj1OgoGbG/top-tracks?market=US",
                  "https://api.spotify.com/v1/artists/4YRxDV8wJFPHPTeXepOstw/top-tracks?market=US"]
 

@@ -40,10 +40,6 @@ This project is to build and deploy a simple “music discovery” web app that 
 2. See output using the preview tab on cloud9. 
 3. Refresh/Reload the page to see random tracks and their artists.
 
-## Heroku
-* Web app will be deployed by using Heroku
-* 
-
 ## Technical Problems
 What are at least 3 technical issues you encountered with your project? How did you fix them?
 * In the beginning of starting the project, I was having authentication issue from spotify. I was not able to fetch any information the the spotify api because of that. To solve this problem

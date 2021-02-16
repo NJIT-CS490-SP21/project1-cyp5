@@ -39,6 +39,8 @@ This project is to build and deploy a simple “music discovery” web app that 
 1. Run command in terminal `python app.py`.
 2. See output using the preview tab on cloud9. 
 3. Refresh/Reload the page to see random tracks and their artists.
+4. Click on the get lyrics box to get the lyrics of that displayed song.
+5. On the search tap underneath the Spoti-py logo, enter your personal favorite artist to get the information of a random song from that artist. 
 
 ## Technical Problems
 What are at least 3 technical issues you encountered with your project? How did you fix them?
